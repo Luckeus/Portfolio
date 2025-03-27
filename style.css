@@ -1,0 +1,141 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  /* Header Animation */
+  header {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    animation: slide-down 0.5s ease-out;
+  }
+  
+  @keyframes slide-down {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    list-style: none;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #4CAF50; /* Hover color change */
+    transform: scale(1.1); /* Grow effect */
+  }
+  
+  /* Hero Section (Fade-in) */
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    text-align: center;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  
+  .hero h1 span {
+    color: #FFD700; /* Gold accent */
+  }
+  
+  /* Pulse Button Effect */
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s;
+  }
+  
+  .pulse {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .btn:hover {
+    background: #45a049;
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  /* Contact Form Animation */
+.contact {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    color: white;
+  }
+  
+  .form-animate {
+    max-width: 500px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards 0.5s;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .hover-grow:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Social Icons Hover */
+  .icon-hover {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+  }
+  
+  .icon-hover:hover {
+    color: #FFD700;
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #222;
+    color: white;
+  }
+  
